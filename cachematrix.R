@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Constract wrapper for matrix object which hold cached metrix inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
     cache <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Return matrix inverse for wrapped by makeCacheMatrix object. Cache the
+## result for future calls.
 
 cacheSolve <- function(x, ...) {
     cache <- x$getinverse()
